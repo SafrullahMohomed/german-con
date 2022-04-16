@@ -17,6 +17,13 @@ include './db-con.php';
 </head>
 <body>
 
+<!--buttons for styles-->
+<div id="buttonset">
+    <button id="button1">Table</button>
+    <button id="button2">Line</button>
+    <button id="button3">Separate</button>
+</div>
+
 <h2>Germany word converter</h2>
 
 <!--search box-->
