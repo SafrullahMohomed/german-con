@@ -12,8 +12,8 @@ include './db-con.php';
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="generator.css">
-    <script defer src="generator.js"></script>
+    <link rel="stylesheet" href="generator1.css">
+    <script defer src="generator1.js"></script>
 </head>
 <body>
 
@@ -31,15 +31,15 @@ include './db-con.php';
 <!--table-->
 <div id="table">
     <table>
-<!--        <tr>-->
-<!--            <th>Original</th>-->
-<!--            <th>Sellebel</th>-->
-<!--            <th>English</th>-->
-<!--            <th>Sinhala</th>-->
-<!--            <th>Tamil</th>-->
-<!---->
-<!---->
-<!--        </tr>-->
+        <tr>
+            <th>Original</th>
+            <th>Sellebel</th>
+            <th>English</th>
+            <th>Sinhala</th>
+            <th>Tamil</th>
+
+
+        </tr>
         <?php
 
 //        $arr = array();
@@ -67,13 +67,13 @@ include './db-con.php';
                 for($i = 0; $i < sizeof($new_array); $i++){
                     if(sizeof($new_array[$i]) != null){
                 echo
-                "
-                    <span class='words-original'>".$new_array[$i][0]['Original']."</span>
-                    <span class='words-sileb'>(".$new_array[$i][0]['Sileb'].", </span>
-                    <span class='words-english'>".$new_array[$i][0]['English'].", </span>
-                    <span class='words-sinhala'>".$new_array[$i][0]['Sinhala'].", </span>
-                    <span class='words-tamil'>".$new_array[$i][0]['Tamil'].")&ensp;</span>
-                ";
+                "<tr>
+                    <td>".$new_array[$i][0]['Original']."</td>
+                    <td>".$new_array[$i][0]['Sileb']."</td>
+                    <td>".$new_array[$i][0]['English']."</td>
+                    <td>".$new_array[$i][0]['Sinhala']."</td>
+                    <td>".$new_array[$i][0]['Tamil']."</td>
+                </tr>";
                 }}
         ?>
 
