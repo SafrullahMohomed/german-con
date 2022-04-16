@@ -17,6 +17,14 @@ include './db-con.php';
 </head>
 <body>
 
+<!--buttons for styles-->
+<div id="buttonset">
+    <button id="button1">Table</button>
+    <button id="button2">Line</button>
+    <button id="button3">Separate</button>
+</div>
+
+
 <h2>Germany word converter</h2>
 
 <!--search box-->
@@ -80,6 +88,33 @@ include './db-con.php';
 
     </table>
 
+    <div id="main-div" class="primary-div">
+        <div id="left-div" class="lr-div">
+            <?php
+            for($i = 0; $i < sizeof($new_array); $i++){
+            if(sizeof($new_array[$i]) != null){
+            echo
+            "
+            <span class='words-original'>".$new_array[$i][0]['Original']."</span>
+            <span class='words-sileb'>".$new_array[$i][0]['Sileb'].", </span>
+            <span class='words-english'>(".$new_array[$i][0]['English'].", </span>
+            <span class='words-sinhala'>".$new_array[$i][0]['Sinhala'].", </span>
+            <span class='words-tamil'>".$new_array[$i][0]['Tamil'].")&ensp;</span>
+            ";
+            }}
+            ?></div>
+        <div id="right-div" class="lr-div"><?php
+            for($i = 0; $i < sizeof($new_array); $i++){
+                if(sizeof($new_array[$i]) != null){
+                    echo
+                        "
+            <span class='words-sileb'>".$new_array[$i][0]['Sileb'].", </span>
+            
+            ";
+                }}
+            ?></div>
+    </div>
+<!--    <div id="next-div" class="primary-div"></div>-->
 </div>
 
 

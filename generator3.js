@@ -1,3 +1,22 @@
+//button links starts here
+const button1 = document.getElementById("button1")
+const button2 = document.getElementById("button2")
+const button3 = document.getElementById("button3")
+
+button1.addEventListener("click", ()=>{
+    location.href = "http://localhost/german-con/generator1.php"
+})
+
+button2.addEventListener("click", ()=>{
+    location.href = "http://localhost/german-con/generator2.php"
+})
+
+button3.addEventListener("click", ()=>{
+    location.href = "http://localhost/german-con/generator3.php"
+})
+
+// buttons ends here
+
 console.log("hi I am connected");
 
 const search_but = document.getElementById("search-but");

@@ -16,6 +16,14 @@ include './db-con.php';
     <script defer src="generator1.js"></script>
 </head>
 <body>
+<!--buttons-->
+
+<!--buttons for styles-->
+<div id="buttonset">
+    <button id="button1">Table</button>
+    <button id="button2">Line</button>
+    <button id="button3">Separate</button>
+</div>
 
 <h2>Germany word converter</h2>
 
