@@ -38,3 +38,34 @@ th {
 .words-original{
     color: #af002f;
 }
+
+.primary-div{
+    /*border: red solid 1px;*/
+    margin:auto;
+    margin-top: 20px;
+
+}
+
+.lr-div{
+    border: blue solid 1px;
+    height: auto;
+    min-height: 300px;
+    width: 47%;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+#main-div{
+    height: auto;
+    min-height: 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+#next-div{
+    height: 200px;
+    margin-top: 30px;
+
+}
