@@ -23,7 +23,7 @@ include './db-con.php';
 <div id="search">
     <form action="/" method="post" id="form">
         <textarea id="textData"></textarea>
-        <input type="text" id="hidden-data" value="">
+        <input type="hidden" id="hidden-data" value="">
         <button type="button" id="search-but">Search</button>
     </form>
 </div>
@@ -31,15 +31,15 @@ include './db-con.php';
 <!--table-->
 <div id="table">
     <table>
-        <tr>
-            <th>Original</th>
-            <th>Sellebel</th>
-            <th>English</th>
-            <th>Sinhala</th>
-            <th>Tamil</th>
-
-
-        </tr>
+<!--        <tr>-->
+<!--            <th>Original</th>-->
+<!--            <th>Sellebel</th>-->
+<!--            <th>English</th>-->
+<!--            <th>Sinhala</th>-->
+<!--            <th>Tamil</th>-->
+<!---->
+<!---->
+<!--        </tr>-->
         <?php
 
 //        $arr = array();
@@ -67,13 +67,13 @@ include './db-con.php';
                 for($i = 0; $i < sizeof($new_array); $i++){
                     if(sizeof($new_array[$i]) != null){
                 echo
-                "<tr>
-                    <td>".$new_array[$i][0]['Original']."</td>
-                    <td>".$new_array[$i][0]['Sileb']."</td>
-                    <td>".$new_array[$i][0]['English']."</td>
-                    <td>".$new_array[$i][0]['Sinhala']."</td>
-                    <td>".$new_array[$i][0]['Tamil']."</td>
-                </tr>";
+                "
+                    <span class='words-original'>".$new_array[$i][0]['Original']."</span>
+                    <span class='words-sileb'>(".$new_array[$i][0]['Sileb'].", </span>
+                    <span class='words-english'>".$new_array[$i][0]['English'].", </span>
+                    <span class='words-sinhala'>".$new_array[$i][0]['Sinhala'].", </span>
+                    <span class='words-tamil'>".$new_array[$i][0]['Tamil'].")&ensp;</span>
+                ";
                 }}
         ?>
 
