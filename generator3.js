@@ -2,6 +2,7 @@
 const button1 = document.getElementById("button1")
 const button2 = document.getElementById("button2")
 const button3 = document.getElementById("button3")
+const button4 = document.getElementById("button4")
 
 button1.addEventListener("click", ()=>{
     location.href = "http://localhost/german-con/generator1.php"
@@ -13,6 +14,10 @@ button2.addEventListener("click", ()=>{
 
 button3.addEventListener("click", ()=>{
     location.href = "http://localhost/german-con/generator3.php"
+})
+
+button4.addEventListener("click", ()=>{
+    location.href = "http://localhost/german-con/generator4.php"
 })
 
 // buttons ends here

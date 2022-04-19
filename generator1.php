@@ -23,6 +23,8 @@ include './db-con.php';
     <button id="button1">Table</button>
     <button id="button2">Line</button>
     <button id="button3">Separate</button>
+    <button id="button4">Tooltip</button>
+
 </div>
 
 <h2>Germany word converter</h2>
