@@ -33,7 +33,7 @@ search_but.addEventListener("click", (e)=>{
     document.getElementById("hidden-data").value = text;
 
     e.preventDefault();
-    textArray = text.split("-");
+    textArray = text.split(" ");
     textArray = textArray.filter(n => n.length > 0);
     console.log(textArray)
     for (const textKey in textArray) {
