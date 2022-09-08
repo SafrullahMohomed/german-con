@@ -6,6 +6,9 @@
 # $ git config --global mergetool.keepBackup false
 *.orig
 
+#for Mac
+.DS_STORE
+
 # Created by git when using merge tools for conflicts
 *.BACKUP.*
 *.BASE.*
